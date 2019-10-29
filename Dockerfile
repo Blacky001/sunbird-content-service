@@ -14,7 +14,7 @@ ENV HTTPS_PROXY "http://172.22.218.218:8085"
 ENV NO_PROXY "*.mindtree.com,*.cloudapp.azure.com,172.22.*.*,172.23.*.*"
 ENV http_proxy "http://172.22.218.218:8085"
 ENV https_proxy "http://172.22.218.218:8085"
-ENV no_proxy "*.mindtree.com,172.22.*.*,172.23.*.*"
+ENV no_proxy "*.mindtree.com,172.22.219.125,172.22.219.126,172.22.219.127,172.22.219.128,172.22.219.129,172.22.219.130,172.22.219.131,172.22.219.132,172.22.219.133,172.22.219.134"
 RUN  wget -P /home/sunbird  https://www.imagemagick.org/download/binaries/ImageMagick-i386-pc-solaris2.11.tar.gz --no-check-certificate
 RUN tar -xvzf /home/sunbird/ImageMagick-i386-pc-solaris2.11.tar.gz -C /home/sunbird
 ENV  MAGICK_HOME "/home/sunbird/ImageMagick-6.9.3"
